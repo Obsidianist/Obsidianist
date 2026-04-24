@@ -7,11 +7,11 @@
 
 ## 目录
 
-1. [什么是 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#1.%20什么是%20Capture-%20速记)
+1. [什么是 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#1.%20什么是%20Capture-速记)
 2. [应用场景与核心优势](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#2.%20应用场景与核心优势)
 3. [前提条件与必要插件](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#3.%20前提条件与必要插件)
 4. [安装与配置 QuickAdd 插件](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#4.%20安装与配置%20QuickAdd%20插件)
-5. [添加并配置 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#5.%20添加并配置%20Capture-%20速记)
+5. [添加并配置 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#5.%20添加并配置%20Capture-速记)
 6. [激活闪电按钮与绑定快捷键](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#6.%20激活闪电按钮与绑定快捷键)
 7. [实际使用演示](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#7.%20实际使用演示)
 8. [输出效果示例](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#8.%20输出效果示例)
