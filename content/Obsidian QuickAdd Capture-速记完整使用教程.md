@@ -1,3 +1,7 @@
+---
+tags:
+  - Obsidian/第三方插件/QuickAdd/Capture/速记
+---
 
 # Obsidian QuickAdd Capture-速记完整使用教程
 

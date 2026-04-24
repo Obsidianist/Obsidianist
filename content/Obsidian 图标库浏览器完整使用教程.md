@@ -1,3 +1,7 @@
+---
+tags:
+  - Obsidian/图标
+---
 # Obsidian 图标库浏览器完整使用教程
 
 > 本教程适用于 **Obsidian Icon Browser**——一款基于 DataviewJS 构建的交互式图标浏览工具，可帮助你快速搜索、预览并复制 Obsidian 内置的全部图标名称。
