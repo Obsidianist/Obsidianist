@@ -2,6 +2,7 @@
 tags:
   - Obsidian/图标
 ---
+
 # Obsidian 图标库浏览器完整使用教程
 
 > 本教程适用于 **Obsidian Icon Browser**——一款基于 DataviewJS 构建的交互式图标浏览工具，可帮助你快速搜索、预览并复制 Obsidian 内置的全部图标名称。
@@ -341,7 +342,7 @@ setIcon(el, "home");
 
 ## 8. 常见问题排查
 
-### 打开笔记后只显示代码，没有界面
+### ❌ 打开笔记后只显示代码，没有界面
 
 **原因**：可能处于**编辑模式**而非阅读模式，或者 Dataview 插件未安装/未启用。
 
@@ -353,7 +354,7 @@ setIcon(el, "home");
 
 ---
 
-### 提示 "DataviewJS is disabled"
+### ❌ 提示 "DataviewJS is disabled"
 
 **原因**：Dataview 的 JavaScript 查询功能未开启。
 
@@ -364,7 +365,7 @@ setIcon(el, "home");
 
 ---
 
-### 图标网格显示为空
+### ❌ 图标网格显示为空
 
 **原因**：`obsidian.getIconIds()` 返回了空数组，通常发生在 Obsidian 版本过旧时。
 
@@ -374,7 +375,7 @@ setIcon(el, "home");
 
 ---
 
-### 点击图标后剪贴板没有内容
+### ❌ 点击图标后剪贴板没有内容
 
 **原因**：浏览器安全策略限制了 `navigator.clipboard` API 的使用（在某些 Linux 系统上较常见）。
 
@@ -385,7 +386,7 @@ setIcon(el, "home");
 
 ---
 
-### 切换深色/浅色背景后图标颜色异常
+### ❌ 切换深色/浅色背景后图标颜色异常
 
 **原因**：部分主题自定义了 CSS 变量，可能与工具内置样式有冲突。
 
@@ -396,7 +397,7 @@ setIcon(el, "home");
 
 ---
 
-### 复制历史在重新打开笔记后消失
+### ❌ 复制历史在重新打开笔记后消失
 
 这是**预期行为**。当前版本的图标库浏览器不持久化存储复制历史，记录仅在当前会话中有效。如有需要，可以利用 Obsidian 的 `localStorage` 或者 `app.saveData()` API 对代码进行扩展。
 

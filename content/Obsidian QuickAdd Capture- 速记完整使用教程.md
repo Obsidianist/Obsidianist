@@ -3,35 +3,35 @@ tags:
   - Obsidian/第三方插件/QuickAdd/Capture/速记
 ---
 
-# Obsidian QuickAdd Capture-速记完整使用教程
+# Obsidian QuickAdd Capture- 速记完整使用教程
 
-本教程适用于 **Capture-速记**——一款基于 QuickAdd 插件的批量任务快速录入工具，可帮助你在 Obsidian 中用最少的操作，将多条待办任务以带时间戳的标注块（Callout）格式，一次性追加到指定笔记的末尾。
+本教程适用于 **Capture- 速记**——一款基于 QuickAdd 插件的批量任务快速录入工具，可帮助你在 Obsidian 中用最少的操作，将多条待办任务以带时间戳的标注块（Callout）格式，一次性追加到指定笔记的末尾。
 
 ---
 
 ## 目录
 
-1. [什么是 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#1.%20什么是%20Capture-速记)
-2. [应用场景与核心优势](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#2.%20应用场景与核心优势)
-3. [前提条件与必要插件](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#3.%20前提条件与必要插件)
-4. [安装与配置 QuickAdd 插件](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#4.%20安装与配置%20QuickAdd%20插件)
-5. [添加并配置 Capture-速记](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#5.%20添加并配置%20Capture-速记)
-6. [激活闪电按钮与绑定快捷键](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#6.%20激活闪电按钮与绑定快捷键)
-7. [实际使用演示](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#7.%20实际使用演示)
-8. [输出效果示例](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#8.%20输出效果示例)
-9. [修改目标笔记路径](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#9.%20修改目标笔记路径)
-10. [常见问题排查](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#10.%20常见问题排查)
-11. [进阶用法与个性化调整](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#11.%20进阶用法与个性化调整)
-12. [与其他插件的联动方式](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#12.%20与其他插件的联动方式)
-13. [适用版本与平台说明](Obsidian%20QuickAdd%20Capture-速记完整使用教程.md#13.%20适用版本与平台说明)
+1. [什么是 Capture- 速记](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#1.%20什么是%20Capture-%20速记)
+2. [应用场景与核心优势](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#2.%20应用场景与核心优势)
+3. [前提条件与必要插件](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#3.%20前提条件与必要插件)
+4. [安装与配置 QuickAdd 插件](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#4.%20安装与配置%20QuickAdd%20插件)
+5. [添加并配置 Capture- 速记](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#5.%20添加并配置%20Capture-%20速记)
+6. [激活闪电按钮与绑定快捷键](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#6.%20激活闪电按钮与绑定快捷键)
+7. [实际使用演示](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#7.%20实际使用演示)
+8. [输出效果示例](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#8.%20输出效果示例)
+9. [修改目标笔记路径](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#9.%20修改目标笔记路径)
+10. [常见问题排查](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#10.%20常见问题排查)
+11. [进阶用法与个性化调整](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#11.%20进阶用法与个性化调整)
+12. [与其他插件的联动方式](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#12.%20与其他插件的联动方式)
+13. [适用版本与平台说明](Obsidian%20QuickAdd%20Capture-%20速记完整使用教程.md#13.%20适用版本与平台说明)
 
 ---
 
-## 1. 什么是 Capture-速记
+## 1. 什么是 Capture- 速记
 
 在日常笔记工作中，我们经常需要迅速记录若干条待办任务——例如开会时临时想到的几件事、读书时产生的几个行动项，或者睡前浮现的几个想法。如果每次都要手动打开笔记、找到合适的位置再逐条排版，效率极低，也容易打断当下的工作状态。
 
-**Capture-速记** 正是为此而生。它通过 QuickAdd 插件的 Capture 功能，结合内嵌 JavaScript 脚本（Inline Script），实现了以下工作流：
+**Capture- 速记** 正是为此而生。它通过 QuickAdd 插件的 Capture 功能，结合内嵌 JavaScript 脚本（Inline Script），实现了以下工作流：
 
 1. 触发一次命令（或按下一个快捷键）
 2. 弹出输入框，依次输入多条任务，每条单独确认
@@ -61,11 +61,11 @@ tags:
 
 **场景四：多任务项目管理**
 
-为不同项目设置多个 Capture-速记实例，每个指向不同的目标笔记，实现按项目分类的快速任务录入。
+为不同项目设置多个 Capture- 速记实例，每个指向不同的目标笔记，实现按项目分类的快速任务录入。
 
 ### 2.2 核心优势
 
-与手动记录和其他捕获方案相比，Capture-速记具备以下优势：
+与手动记录和其他捕获方案相比，Capture- 速记具备以下优势：
 
 **零切换摩擦**：无需打开、切换或搜索目标笔记，触发即录入，录入后自动返回当前工作界面。
 
@@ -146,7 +146,7 @@ QuickAdd 是 Obsidian 社区最受欢迎的工作流自动化插件之一，提�
 
 ---
 
-## 5. 添加并配置 Capture-速记
+## 5. 添加并配置 Capture- 速记
 
 ### 第一步：新建一个 Capture 类型的 Choice
 
@@ -328,7 +328,7 @@ QuickAdd 的 Capture format 字段通常用于填写静态模板文本，支持 
 
 ## 8. 输出效果示例
 
-假设你在 `2026-04-22` 的 `14:30:05` 时触发了 Capture-速记，并依次输入了以下三条任务：
+假设你在 `2026-04-22` 的 `14:30:05` 时触发了 Capture- 速记，并依次输入了以下三条任务：
 
 - `回复 Alice 的邮件`
 - `准备周五的会议材料`
@@ -607,7 +607,7 @@ Tasks 插件支持的优先级 Emoji：`🔺`（最高）、`⏫`（高）、`�
 
 **Tasks 插件**（obsidian-tasks-group/obsidian-tasks）是 Obsidian 中功能最完善的任务管理插件，支持跨笔记任务查询、截止日期、优先级、重复任务等特性。
 
-Capture-速记生成的 `- [ ] 任务内容` 格式，与 Tasks 插件完全兼容。你可以在任意笔记中创建 Tasks 查询代码块，从速记笔记中筛选出未完成的任务：
+Capture- 速记生成的 `- [ ] 任务内容` 格式，与 Tasks 插件完全兼容。你可以在任意笔记中创建 Tasks 查询代码块，从速记笔记中筛选出未完成的任务：
 
 ````markdown
 ```tasks
@@ -626,7 +626,7 @@ path includes 速记/速记笔记
 
 ### 12.2 与 Dataview 插件联动
 
-**Dataview 插件**支持使用 DQL（Dataview Query Language）查询任务。配合 Capture-速记生成的任务列表，可以构建自定义任务仪表板：
+**Dataview 插件**支持使用 DQL（Dataview Query Language）查询任务。配合 Capture- 速记生成的任务列表，可以构建自定义任务仪表板：
 
 ````markdown
 ```dataview
@@ -645,7 +645,7 @@ SORT file.mtime DESC
 
 ### 12.3 与 Periodic Notes / Daily Notes 联动
 
-如果你有每日笔记（Daily Notes）或周期性笔记（Periodic Notes）工作流，可以将 Capture-速记的目标文件设置为当日笔记的路径。由于每日笔记的路径包含日期变量，需要对脚本中的 `TARGET` 变量进行动态计算：
+如果你有每日笔记（Daily Notes）或周期性笔记（Periodic Notes）工作流，可以将 Capture- 速记的目标文件设置为当日笔记的路径。由于每日笔记的路径包含日期变量，需要对脚本中的 `TARGET` 变量进行动态计算：
 
 ```javascript
 const TARGET = `日记/${moment().format("YYYY-MM-DD")}.md`;
@@ -691,9 +691,9 @@ QuickAdd 最新版本支持将 Capture 内容写入 `.canvas` 文件中的指定
 
 ## 附录
 
-### Capture-速记的完整代码
+### Capture- 速记的完整代码
 
-**用途说明**：以下代码为 Capture-速记的完整代码，需粘贴至 QuickAdd Capture 配置的 **Capture format** 输入框中。脚本执行时会循环弹出输入框收集多条任务，最终将其格式化为带时间戳的 `[!todo]` Callout 块，追加到 `TARGET` 变量指定的目标笔记末尾。若目标文件不存在，脚本会自动创建。
+**用途说明**：以下代码为 Capture- 速记的完整代码，需粘贴至 QuickAdd Capture 配置的 **Capture format** 输入框中。脚本执行时会循环弹出输入框收集多条任务，最终将其格式化为带时间戳的 `[!todo]` Callout 块，追加到 `TARGET` 变量指定的目标笔记末尾。若目标文件不存在，脚本会自动创建。
 
 > ⚠️ **使用方法**：将下方代码块（**包含**开头的三个反引号和 `js quickadd` 标识符，以及末尾的三个反引号）**完整复制**，粘贴到 QuickAdd Capture 配置的 **Capture format** 输入框中。同时，将代码第一行的 `TARGET` 路径修改为你自己的目标笔记路径，并确保与 Capture To 字段中的路径**完全一致**。
 
