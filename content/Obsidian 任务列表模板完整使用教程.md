@@ -1,3 +1,7 @@
+---
+tags:
+  - Obsidian/第三方插件/Templater/任务列表
+---
 
 # Obsidian 任务列表模板完整使用教程
 
