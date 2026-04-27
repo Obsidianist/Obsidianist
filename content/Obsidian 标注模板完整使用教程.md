@@ -1,3 +1,7 @@
+---
+tags:
+  - Obsidian/第三方插件/Templater/标注
+---
 
 # Obsidian 标注模板完整教程
 
