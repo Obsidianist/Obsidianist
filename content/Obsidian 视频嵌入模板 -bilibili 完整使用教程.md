@@ -1,6 +1,6 @@
 ---
 tags:
-  - Obsidian/视频
+  - Obsidian/视频/bilibili
 ---
 
 # Obsidian 视频嵌入模板 -bilibili 完整使用教程
