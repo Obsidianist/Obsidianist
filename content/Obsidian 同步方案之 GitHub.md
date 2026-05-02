@@ -5,7 +5,7 @@ tags:
 
 # Obsidian 同步方案之 GitHub
 
-同步笔记库这件事，Obsidian 社区有不少成熟的方案。Remotely Save 把文件搬到云端，Syncthing 在设备之间直连对传，各有各的适用场景。GitHub 方案走的是第三条路：用 Git 把整个笔记库变成一个有版本历史的代码仓库，每次同步都是一次提交，每个历史节点都可以回溯。
+同步笔记库这件事，Obsidian 社区有不少成熟的方案。[Remotely Save](Obsidian%20同步方案之%20Remotely%20Save.md) 把文件搬到云端，[Syncthing](Obsidian%20同步方案之%20Syncthing.md) 在设备之间直连对传，各有各的适用场景。GitHub 方案走的是第三条路：用 Git 把整个笔记库变成一个有版本历史的代码仓库，每次同步都是一次提交，每个历史节点都可以回溯。
 
 这带来了其他方案没有的东西。它不只是「把文件同步过去」，而是「记录你对文件做了什么、什么时候做的」。一年前写下的某段文字，删掉了、后来想找，还能找回来。在两台设备上同时改了同一个文件，不是静默覆盖，而是留下可追溯的冲突记录供你处置。如果某次操作把笔记搞乱了，可以直接退回到上一个干净的状态。
 
@@ -43,7 +43,7 @@ tags:
 
 在进入具体步骤之前，有必要先想清楚：这套方案能解决什么问题，不适合哪些场景。
 
-**核心价值：版本控制与可追溯性。** GitHub 方案最大的区别性优势不是同步本身，而是同步过程中自动建立的历史记录。每次提交都保存了一个快照，注明了时间和改动摘要。这个快照序列意味着你随时可以把笔记库退回到任意历史节点，这是 Remotely Save 或 Syncthing 做不到的事。
+**核心价值：版本控制与可追溯性。** GitHub 方案最大的区别性优势不是同步本身，而是同步过程中自动建立的历史记录。每次提交都保存了一个快照，注明了时间和改动摘要。这个快照序列意味着你随时可以把笔记库退回到任意历史节点，这是 [Remotely Save](Obsidian%20同步方案之%20Remotely%20Save.md) 或 [Syncthing](Obsidian%20同步方案之%20Syncthing.md) 做不到的事。
 
 **备份层面的价值。** 笔记库推送到 GitHub 之后，即便本地设备损坏或丢失，远端仓库里的内容依然完整。相比于本地磁盘备份，GitHub 提供了一个与设备物理分离的副本。
 
@@ -52,7 +52,7 @@ tags:
 **最理想的受众。** 习惯把笔记库当作一个长期项目来维护，希望保留历史、防止误操作的用户；愿意养成「改完就提交」习惯的用户；有时需要在两台电脑之间切换的用户；以及将 GitHub 作为笔记公开展示平台的用户。
 
 > 💡 **说明**
-> GitHub 方案和 Syncthing、Remotely Save 并不互斥。一种常见的组合是：用 Syncthing 在设备间做日常快速同步，同时定期用 Git 提交推送到 GitHub，作为长期版本归档与远程备份。两者各司其职，互不干扰。
+> GitHub 方案和 [Syncthing](Obsidian%20同步方案之%20Syncthing.md)、[Remotely Save](Obsidian%20同步方案之%20Remotely%20Save.md) 并不互斥。一种常见的组合是：用 [Syncthing](Obsidian%20同步方案之%20Syncthing.md) 在设备间做日常快速同步，同时定期用 Git 提交推送到 GitHub，作为长期版本归档与远程备份。两者各司其职，互不干扰。
 
 ---
 
@@ -760,9 +760,9 @@ GitHub 网页端提供了对每个文件完整历史记录的可视化展示。�
 
 桌面端 Git 插件与 GitHub Desktop 可以并用，也可以二选一，取决于你更喜欢图形界面还是自动化。
 
-### 16.5 与 Remotely Save 或 Syncthing 结合使用
+### 16.5 与 [Remotely Save](Obsidian%20同步方案之%20Remotely%20Save.md) 或 [Syncthing](Obsidian%20同步方案之%20Syncthing.md) 结合使用
 
-GitHub 方案和其他同步方案并不互斥。一种常见的组合是：用 Syncthing 在设备间做日常快速同步（实时、无需手动操作），同时定期用 Git 提交推送到 GitHub，作为长期版本历史存档与异地备份。两者各司其职：Syncthing 解决即时同步，GitHub 解决版本追溯。只需注意在 `.stignore`（Syncthing 的忽略文件）中排除 `.git` 文件夹，避免 Syncthing 把 Git 的内部数据库也同步来同步去，造成不必要的数据传输和潜在损坏。
+GitHub 方案和其他同步方案并不互斥。一种常见的组合是：用 [Syncthing](Obsidian%20同步方案之%20Syncthing.md) 在设备间做日常快速同步（实时、无需手动操作），同时定期用 Git 提交推送到 GitHub，作为长期版本历史存档与异地备份。两者各司其职：[Syncthing](Obsidian%20同步方案之%20Syncthing.md) 解决即时同步，GitHub 解决版本追溯。只需注意在 `.stignore`（[Syncthing](Obsidian%20同步方案之%20Syncthing.md) 的忽略文件）中排除 `.git` 文件夹，避免 [Syncthing](Obsidian%20同步方案之%20Syncthing.md) 把 Git 的内部数据库也同步来同步去，造成不必要的数据传输和潜在损坏。
 
 ---
 
@@ -778,7 +778,7 @@ GitHub 方案和其他同步方案并不互斥。一种常见的组合是：用 
 > 对于对移动端 Git 体验要求更高的 iOS 用户，**Working Copy**（`workingcopy.app`）是社区中广受认可的第三方 Git 客户端，提供原生 iOS 体验，性能和稳定性均优于 isomorphic-git 方案。Working Copy 本身为收费应用（推送功能需购买 Pro 版），可以通过 iOS 的「文件」App 将克隆的仓库文件夹提供给 Obsidian 使用。具体配置步骤涉及 iOS 文件共享机制，可参考 Obsidian 论坛的 Working Copy 专题讨论（见参考资源）。
 
 > ⚠️ **注意**
-> 官方插件页面明确提示：移动端的 Git 实现存在已知问题且修复难度较大，如果你的仓库很大（包含大量文件），移动端 Git 插件可能无法满足你的需求。这不是配置问题，是底层技术限制。如果对移动端同步的稳定性有更高要求，Syncthing 或 Remotely Save 在移动端的表现会更可靠。
+> 官方插件页面明确提示：移动端的 Git 实现存在已知问题且修复难度较大，如果你的仓库很大（包含大量文件），移动端 Git 插件可能无法满足你的需求。这不是配置问题，是底层技术限制。如果对移动端同步的稳定性有更高要求，[Syncthing](Obsidian%20同步方案之%20Syncthing.md) 或 [Remotely Save](Obsidian%20同步方案之%20Remotely%20Save.md) 在移动端的表现会更可靠。
 
 **GitHub 存储限制。** GitHub 的免费私有仓库没有明确的文件数量限制，但单文件大小不能超过 100 MB，整个仓库建议不超过 1 GB（超过后 GitHub 会发出警告，超过 5 GB 会影响正常使用）。对于主要存放 Markdown 文本和少量图片的笔记库，几乎不会触及这些上限，但如果笔记库包含大量 PDF、音频或视频文件，需要留意。
 
