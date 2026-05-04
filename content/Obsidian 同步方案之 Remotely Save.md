@@ -17,20 +17,20 @@ Remotely Save 是解决这道门槛最常见的社区方案之一。这是一个
 
 ## 目录
 
-1. [Remotely Save 是什么](Obsidian%20同步方案之%20Remotely%20Save.md#1.%20Remotely%20Save%20是什么)
-2. [两种方案的选择逻辑](Obsidian%20同步方案之%20Remotely%20Save.md#2.%20两种方案的选择逻辑)
-3. [前提条件](Obsidian%20同步方案之%20Remotely%20Save.md#3.%20前提条件)
-4. [安装与启用插件](Obsidian%20同步方案之%20Remotely%20Save.md#4.%20安装与启用插件)
-5. [方案一：OneDrive 配置流程](Obsidian%20同步方案之%20Remotely%20Save.md#5.%20方案一：OneDrive%20配置流程)
-6. [方案二：InfiniCLOUD WebDAV 准备工作](Obsidian%20同步方案之%20Remotely%20Save.md#6.%20方案二：InfiniCLOUD%20WebDAV%20准备工作)
-7. [方案二：在 Remotely Save 中完成 WebDAV 配置](Obsidian%20同步方案之%20Remotely%20Save.md#7.%20方案二：在%20Remotely%20Save%20中完成%20WebDAV%20配置)
-8. [核心配置项详解](Obsidian%20同步方案之%20Remotely%20Save.md#8.%20核心配置项详解)
-9. [移动端同步方向的关键设置](Obsidian%20同步方案之%20Remotely%20Save.md#9.%20移动端同步方向的关键设置)
-10. [触发同步的几种方式](Obsidian%20同步方案之%20Remotely%20Save.md#10.%20触发同步的几种方式)
-11. [OneDrive 免费版限制与注意事项](Obsidian%20同步方案之%20Remotely%20Save.md#11.%20OneDrive%20免费版限制与注意事项)
-12. [InfiniCLOUD 免费版限制与注意事项](Obsidian%20同步方案之%20Remotely%20Save.md#12.%20InfiniCLOUD%20免费版限制与注意事项)
-13. [常见问题与排查](Obsidian%20同步方案之%20Remotely%20Save.md#13.%20常见问题与排查)
-14. [进阶用法与个性化调整](Obsidian%20同步方案之%20Remotely%20Save.md#14.%20进阶用法与个性化调整)
+1. [Remotely Save 是什么](#1.%20Remotely%20Save%20是什么)
+2. [两种方案的选择逻辑](#2.%20两种方案的选择逻辑)
+3. [前提条件](#3.%20前提条件)
+4. [安装与启用插件](#4.%20安装与启用插件)
+5. [方案一：OneDrive 配置流程](#5.%20方案一：OneDrive%20配置流程)
+6. [方案二：InfiniCLOUD WebDAV 准备工作](#6.%20方案二：InfiniCLOUD%20WebDAV%20准备工作)
+7. [方案二：在 Remotely Save 中完成 WebDAV 配置](#7.%20方案二：在%20Remotely%20Save%20中完成%20WebDAV%20配置)
+8. [核心配置项详解](#8.%20核心配置项详解)
+9. [移动端同步方向的关键设置](#9.%20移动端同步方向的关键设置)
+10. [触发同步的几种方式](#10.%20触发同步的几种方式)
+11. [OneDrive 免费版限制与注意事项](#11.%20OneDrive%20免费版限制与注意事项)
+12. [InfiniCLOUD 免费版限制与注意事项](#12.%20InfiniCLOUD%20免费版限制与注意事项)
+13. [常见问题与排查](#13.%20常见问题与排查)
+14. [进阶用法与个性化调整](#14.%20进阶用法与个性化调整)
 
 ---
 
