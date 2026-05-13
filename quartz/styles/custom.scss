@@ -8,13 +8,13 @@
     flex: 0 0 161px !important;
     max-height: 161px !important;
     min-height: 0 !important;
-    overflow-y: auto !important;
+    overflow: hidden !important;
   }
 
   .backlinks {
     flex: 0 0 118px !important;
     max-height: 118px !important;
     min-height: 0 !important;
-    overflow-y: auto !important;
+    overflow: hidden !important;
   }
 }
