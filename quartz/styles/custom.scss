@@ -2,11 +2,20 @@
 
 // put your custom CSS here!
 
-/* 修复右侧栏 TOC 过高导致 Backlinks 不可见 */
+/* 修复右侧栏 TOC 过高导致 Backlinks 不可见，同时保留折叠功能 */
 .right.sidebar {
-  .toc.desktop-only {
+  /* 展开状态：限制高度为 161px，防止撑满侧栏 */
+  .toc.desktop-only:has(.toc-header[aria-expanded="true"]) {
     flex: 0 0 161px !important;
     max-height: 161px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* 折叠状态：缩小至按钮高度，Backlinks 自动上移 */
+  .toc.desktop-only:has(.toc-header[aria-expanded="false"]) {
+    flex: 0 0 auto !important;
+    max-height: none !important;
     min-height: 0 !important;
     overflow: hidden !important;
   }
