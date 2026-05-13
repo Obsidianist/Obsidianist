@@ -1,3 +1,20 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+/* 修复右侧栏 TOC 过高导致 Backlinks 不可见 */
+.right.sidebar {
+  .toc.desktop-only {
+    flex: 0 0 161px !important;
+    max-height: 161px !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+  }
+
+  .backlinks {
+    flex: 0 0 118px !important;
+    max-height: 118px !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+  }
+}
