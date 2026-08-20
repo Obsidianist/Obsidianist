@@ -2,6 +2,7 @@
 tags:
   - Obsidian
   - 同步
+  - 备份
   - GitHub
 ---
 
