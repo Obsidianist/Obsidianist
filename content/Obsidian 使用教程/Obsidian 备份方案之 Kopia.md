@@ -3,6 +3,7 @@ tags:
   - Obsidian
   - 备份
   - Kopia
+  - WebDAV
 ---
 
 # Obsidian 备份方案之 Kopia
@@ -408,16 +409,17 @@ C:\Obsidian\MyVault
 - **Connection ID**（用户名）
 - **Apps Password**（密码）
 
-> ⚠️ **注意（特定设置）**
+> ⚠️警告（WebDAV Server URL 填写注意事项）
 >
-> InfiniCLOUD 仅为本文示例。如果使用其他 WebDAV 服务，请替换为对应的 URL 和凭证。
+> **错误做法**：
 >
-> | 项目 | 示例服务 | 通用写法/替换建议 |
-> |------|---------|------------------|
-> | 云端服务 | InfiniCLOUD | 可替换为其他支持 WebDAV 的服务 |
-> | WebDAV URL | 服务商提供的连接地址 | 替换为实际地址 |
-> | 用户名 | Connection ID | 替换为实际用户名 |
-> | 密码 | Apps Password | 替换为实际密码 |
+> 直接填写 InfiniCLOUD 提供的 WebDAV Connection URL（例如 `https://equity.infini-cloud.net/dav/`）。这会导致 Kopia 将仓库直接建立在 WebDAV 根目录下，所有仓库文件与文件夹散落在根目录中，造成文件结构混乱。
+>
+> **正确做法（按顺序操作）**：
+>
+> 1. **提前手动创建目标文件夹**：在 InfiniCLOUD 网页端或通过 WebDAV 客户端，在根目录下提前创建好用于存放 Kopia 仓库的文件夹（例如 `Kopia/KopiaBackup/`）。Kopia 本身不会通过 WebDAV 协议自动创建子目录，若未提前创建，后续创建仓库将报错。
+> 
+> 2. **填写完整的 WebDAV Server URL**：在 Kopia 的 WebDAV Server URL 输入框中，填写根地址加上目标子路径的完整地址。例如，若根地址为 `https://equity.infini-cloud.net/dav/`，目标文件夹为 `Kopia/KopiaBackup/`，则应填写 `https://equity.infini-cloud.net/dav/Kopia/KopiaBackup/`。
 
 ### 9.2 网络环境检查
 
